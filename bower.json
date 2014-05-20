@@ -1,0 +1,26 @@
+{
+  "name": "travel-book",
+  "version": "0.0.1",
+  "homepage": "https://github.com/adrice727/travel-book",
+  "authors": [
+    "Aaron Rice <adrice727@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "d3": "~3.4.8",
+    "topojson": "~1.6.13",
+    "angular-google-maps": "~1.1.0",
+    "underscore": "~1.6.0",
+    "angular-ui-router": "~0.2.10"
+  }
+}
