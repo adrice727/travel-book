@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <title>travel book</title>
+  <link rel="stylesheet" type="text/css" href="../styles/pure-min.css">
   <link rel="stylesheet" type="text/css" href="../styles/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Rock+Salt|Josefin+Slab|Roboto' rel='stylesheet' type='text/css'>
   <script src="js/d3.min.js"></script>
   <script src="js/topojson.v1.min.js"></script>
 </head>
@@ -20,7 +21,15 @@
 
   <div class="content" ng-controller="mainController">
     <h3 class="salt title">{{name}}</h3>
-    <p class="beenie notes">{{notes}}</p>
+    <form name='add-link' class='link-submit' ng-submit='linkSubmit()'>
+      <input name='link' class='slab form-url' type='text' ng-model='link.url' placeholder="Enter the URL here . . .">
+      <input name='link' class='slab form-alias' type='text' ng-model='link.alias' placeholder="Enter a link alias (optional)">   
+      <input type='submit' class = "pure-button button-secondary button-xsmall" value='Add a Link +'>
+    </form>
+    <ul class="link-list" ng-repeat="link in userLinks">
+      <li><a href="{{link.url}}">{{link.alias || link.url}}</a></li>
+    </ul>
+    <textarea class="slab notes" placeholder="add your notes here . . .">{{notes}}</textarea>
   </div>
 
 

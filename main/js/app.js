@@ -210,15 +210,14 @@ angular.module('travel_book', [])
   
   $scope.countries = {};
 
-  
-
   var countrySelected = function(country) {
     if ( !$scope.countries[country]) {
-      $scope.countries[country] = {name: country, notes: 'asdfdfa' };
+      $scope.countries[country] = {name: country, notes: '' };
     }
 
     var name = $scope.countries[country].name;
     var notes = $scope.countries[country].notes;
+
 
     $scope.$apply(function(){
       $scope.currentCountry = country;
@@ -227,8 +226,21 @@ angular.module('travel_book', [])
     })
   }
 
+  var url = $scope.linkUrl;
+  var alias = $scope.linkAlias;
 
+  $scope.userLinks = [];
 
+  $scope.linkSubmit = function() {
+    var url = $scope.link.url;
+    var alias = $scope.link.alias;
+
+    console.log($scope.link.url);
+    console.log($scope.link.alias);
+
+    $scope.userLinks.push({url: url, alias: alias})
+    $scope.link = null;
+  }
 
 })
 

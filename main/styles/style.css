@@ -18,6 +18,32 @@
   font-size:10px;
   text-transform:capitalize;
 }
+
+.link-submit {
+  margin-left: 40px;
+}
+
+.link-list {
+  margin-left: 40px;
+}
+
+.form-url {
+  width: 400px;
+  margin: 0px, 10px;
+}
+
+.form-alias {
+  width: 200px;
+  margin: 0px, 10px;
+}
+
+textarea {
+  margin: 5px 50px;
+  width: 80%;
+  height: 300px;
+  border: none;
+}
+
 #container {
   margin:10px 1%;
   border-radius: 15px;
@@ -49,6 +75,10 @@ div.tooltip {
   stroke-width: 1px;
 }
 
+.notes {
+  font-size: 1.2em;
+  margin: 10px 40px;
+}
 
 .salt{
   font-family: 'Rock Salt', cursive;
@@ -56,4 +86,57 @@ div.tooltip {
 
 .beenie{
   font-family: 'Reenie Beanie', cursive;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.slab {
+  font-family: 'Josefin Slab', serif;
+}
+
+.invisible {
+  display: none;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+            font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
 }
