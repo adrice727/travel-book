@@ -209,14 +209,20 @@ angular.module('travel_book', [])
 
   
   $scope.countries = {};
+  $scope.userLinks = [];
 
   var countrySelected = function(country) {
     if ( !$scope.countries[country]) {
       $scope.countries[country] = {name: country, notes: '' };
     }
 
+    $scope.userLinks = [];
+    $scope.notes = '';
+
     var name = $scope.countries[country].name;
     var notes = $scope.countries[country].notes;
+
+    $scope.userLinks.push({url: "http:\/\/www.lonelyplanet.com\/" + name + "" , alias: "Lonely Planet " + name + ""});
 
 
     $scope.$apply(function(){
@@ -224,12 +230,12 @@ angular.module('travel_book', [])
       $scope.notes = notes;
       $scope.name = name;
     })
+
   }
 
   var url = $scope.linkUrl;
   var alias = $scope.linkAlias;
 
-  $scope.userLinks = [];
 
   $scope.linkSubmit = function() {
     var url = $scope.link.url;

@@ -29,7 +29,7 @@
     <ul class="link-list" ng-repeat="link in userLinks">
       <li><a href="{{link.url}}">{{link.alias || link.url}}</a></li>
     </ul>
-    <textarea class="slab notes" placeholder="add your notes here . . .">{{notes}}</textarea>
+    <textarea class="slab notes" ng-model="notes" placeholder="add your notes here . . .">{{notes}}</textarea>
   </div>
 
 
