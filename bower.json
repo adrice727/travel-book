@@ -16,11 +16,8 @@
   ],
   "dependencies": {
     "angular": "~1.2.16",
-    "angular-route": "~1.2.16",
     "d3": "~3.4.8",
     "topojson": "~1.6.13",
-    "angular-google-maps": "~1.1.0",
-    "underscore": "~1.6.0",
-    "angular-ui-router": "~0.2.10"
+    "underscore": "~1.6.0"
   }
 }
