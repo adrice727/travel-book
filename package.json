@@ -1,0 +1,13 @@
+{
+  "name": "travelbook",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.2.2",
+    "express": "^3.8.1",
+
+  }
+}
